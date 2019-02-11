@@ -23,7 +23,7 @@ export default class DayHeader extends Component<DayTableHeaderProps> {
     parentEl.innerHTML = '' // because might be nbsp
     parentEl.appendChild(
       this.el = htmlToElement(
-        '<div class="fc-row ' + this.theme.getClass('headerRow') + '">' +
+        '<div class="fc-row test ' + this.theme.getClass('headerRow') + '">' +
           '<table class="' + this.theme.getClass('tableGrid') + '">' +
             '<thead></thead>' +
           '</table>' +
