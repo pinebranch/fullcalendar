@@ -2,6 +2,7 @@
   "name": "fullcalendar",
   "title": "FullCalendar",
   "description": "Full-sized drag & drop event calendar",
+  "version": "4.0.0-alpha.4",
   "keywords": [
     "calendar",
     "event",
