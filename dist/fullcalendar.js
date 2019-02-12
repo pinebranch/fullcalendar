@@ -14131,7 +14131,7 @@ var Toolbar = /** @class */ (function (_super) {
         _this._updateToday = memoized_rendering_1.memoizeRendering(_this.updateToday, null, [_this._renderLayout]);
         _this._updatePrev = memoized_rendering_1.memoizeRendering(_this.updatePrev, null, [_this._renderLayout]);
         _this._updateNext = memoized_rendering_1.memoizeRendering(_this.updateNext, null, [_this._renderLayout]);
-        _this.el = dom_manip_1.createElement('div', { className: 'fc-toolbar abc ' + extraClassName });
+        _this.el = dom_manip_1.createElement('div', { className: 'fc-toolbar abvc ' + extraClassName });
         return _this;
     }
     Toolbar.prototype.destroy = function () {

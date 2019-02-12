@@ -1,40 +1,4 @@
 
-v4.0.0-beta.3/4 (2019-02-06)
-----------------------------
-NPM problems. Had to push another release. No code changes.
-
-
-v4.0.0-beta.2 (2019-02-06)
---------------------------
-
-BIG changes since last alpha release:
-(see https://fullcalendar.io/docs/v4/release-notes for more info)
-- all functionality is broken up into plugins
-- changed the names of many views (ex: agendaWeek -> timeGridWeek)
-- changed the names of the npm packages (ex: @fullcalendar/core)
-- technique for initializing a calendar (and using plugins) has changed
-- SuperAgent is no longer needed
-- Bootstrap 3 theme support dropped
-- jQuery UI theme support dropped
-- Bower support dropped
-- Composer support *temporarily* dropped
-- a new npm-run based dev workflow
-- bundled via Rollup (instead of Webpack)
-
-Smaller changes since last alpha release:
-- no need to specify `timeZoneImpl` setting. simply use luxon or moment-timezone plugin instead
-- `agendaEventMinHeight` renamed to `timeGridEventMinHeight`
-- for registering a custom view use `createPlugin` instead of `defineView`
-- `groupByDatesAndResources` and `groupByResources` removed. Use `datesAboveResources` instead
-- removed the deprecated `theme` settings. use `themeSystem` instead
-- for Boostrap 4 theme support, specify `themeSystem: 'boostrap'` instead of (`'bootstrap4'`)
-
-Really obscure changes (TODO: move these to final changelog):
-- `MAX_TIMELINE_SLOTS` moved to `(packageRoot).config.MAX_TIMELINE_SLOTS`
-- `touchMouseIgnoreWait` moved to `(packageRoot).config.touchMouseIgnoreWait`
-- `dataAttrPrefix` moved to `(packageRoot).config.dataAttrPrefix`
-
-
 v4.0.0-alpha.4 (2019-01-11)
 ---------------------------
 
@@ -47,9 +11,7 @@ bugfixes that preexisted v4
 - eventResize helper element should go through eventDestroy (#3543)
 - set touchstart listeners as passive (#4149)
 
-bugfixes for regressions: #4363, #4422, #4331, #4342, #4416, #4333, #4350, #4348, #4149, #4444
-
-also, all bugfixes from [v3.10.0](https://github.com/fullcalendar/fullcalendar/releases/tag/v3.10.0) have been merged
+bugfixes for regressions: #4363, #4422, #4238, #4331, #4342, #4416, #4333, #4350, #4348, #4149, #4444
 
 
 v4.0.0-alpha.3 (2018-12-21)
